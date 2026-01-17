@@ -1,0 +1,36 @@
+{
+  "restaurants": [
+    {"id": 1,"name": "Pizza Palace","description": "Delicious wood-fired pizzas loved across Maseru. Perfect for family and friends!","delivery": "30-40 min","rating": 4.7,"image": "pizza.jpg"},
+    {"id": 2,"name": "Burger Joint","description": "Juicy, locally-sourced beef burgers with freshly made sides. A taste you can't resist!","delivery": "20-30 min","rating": 4.5,"image": "burger_joint.jpg"},
+    {"id": 3,"name": "Sushi Spot","description": "Fresh, premium sushi rolls prepared daily. Experience Japanese flavors in Maseru!","delivery": "40-50 min","rating": 4.8,"image": "sushi.jpg"},
+    {"id": 4,"name": "Mama's Kitchen","description": "Authentic Sesotho cuisine with homemade stews, pap, and local delicacies. Comfort food at its best!","delivery": "25-35 min","rating": 4.9,"image": "mamas.jpg"},
+    {"id": 5,"name": "Chill & Grill","description": "Perfect spot for grilled meats, peri-peri chicken, and refreshing drinks. Ideal for casual dining!","delivery": "30-45 min","rating": 4.6,"image": "chill.jpg"}
+  ],
+  "menuItems": {
+    "1": [
+      {"id": 101,"name": "Margherita Pizza","description": "Classic tomato & mozzarella","price": 250,"image": "magherita.jpg"},
+      {"id": 102,"name": "Pepperoni Pizza","description": "Spicy pepperoni with extra cheese","price": 320,"image": "papperoni.jpg"},
+      {"id": 103,"name": "BBQ Pizza","description": "Smoky BBQ chicken pizza","price": 350,"image": "bbq.jpg"}
+    ],
+    "2": [
+      {"id": 201,"name": "Classic Cheese Pizza","description": "Pizza coated with cheddar cheese","price": 220,"image": "cheese_pizza.jpg"},
+      {"id": 202,"name": "Veggie Burger","description": "Grilled vegetable patty with fresh toppings","price": 200,"image": "veggie.jpg"},
+      {"id": 203,"name": "Loaded Fries","description": "Fries topped with cheese, bacon & sauce","price": 150,"image": "loaded.jpg"}
+    ],
+    "3": [
+      {"id": 301,"name": "California Roll","description": "Crab, avocado, cucumber","price": 180,"image": "california_roll.jpg"},
+      {"id": 302,"name": "Chocolate Shake","description": "Fresh chocalte with froth","price": 200,"image": "shake.jpg"},
+      {"id": 303,"name": "Garlic Breadsticks","description": "Steamed Breadsticks with sea salt and garlic","price": 90,"image": "breadsticks.jpg"}
+    ],
+    "4": [
+      {"id": 401,"name": "Beef Stew","description": "Slow-cooked beef with vegetables","price": 180,"image": "beef_stew.jpg"},
+      {"id": 402,"name": "Pap & Beans","description": "Traditional maize porridge with beans","price": 120,"image": "pap.jpg"},
+      {"id": 403,"name": "Chicken Moroho","description": "Chicken with spinach and local spices","price": 200,"image": "chicken_pap.jpg"}
+    ],
+    "5": [
+      {"id": 501,"name": "Peri-Peri Chicken","description": "Spicy grilled chicken with sides","price": 250,"image": "chicken.jpg"},
+      {"id": 502,"name": "BBQ Ribs","description": "Tender ribs with smoky BBQ sauce","price": 300,"image": "ribs.jpg"},
+      {"id": 503,"name": "Fries & Dips","description": "Crispy fries served with 3 dipping sauces","price": 100,"image": "fries.jpg"}
+    ]
+  }
+}

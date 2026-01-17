@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalBites - All Food Items</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"-->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo-section" onclick="window.location.href='index.html'">
+                <img src="images/svg/logo.svg" alt="LocalBites" class="logo-img">
+                <span class="logo-text">LocalBites lite</span>
+            </div>
+            
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" id="food-search-input" class="search-input" placeholder="(Placeholder)Search..." aria-label="Search food">
+                    <button type="button" class="search-btn" aria-hidden="true">Search</button>
+                </div>
+            </div>
+            
+            <div class="user-section">
+                <div class="cart-icon-nav" onclick="window.location.href='cart.html'">
+                    <img src="images/svg/cart.svg" alt="Cart">
+                    <span id="cart-count-nav">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <div class="menu-item" onclick="window.location.href='index.html'">
+                    <img src="images/svg/home.svg" alt="Home">
+                    <span>Restaurants</span>
+                </div>
+    
+                <div class="menu-item active" onclick="window.location.href='food.html'">
+                    <img src="images/svg/food.svg" alt="Food">
+                    <span>All Food</span>
+                </div>
+                <div class="menu-item" onclick="window.location.href='cart.html'">
+                    <img src="images/svg/cart.svg" alt="Cart">
+                    <span>My Cart</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content-area">
+            <section class="page">
+                <div class="section-header">
+                    <h2>All Food Items</h2>
+                    <p>Browse delicious food from all restaurants. Click to add to cart!</p>
+                </div>
+
+                <!-- Food items grid -->
+                <div class="restaurant-grid" id="all-food-items">
+                    <!-- Dynamic content will be inserted here by JavaScript -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="food.js"></script>
+</body>
+</html>

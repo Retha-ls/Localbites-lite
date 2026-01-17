@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalBites - Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo-section" onclick="window.location.href='index.html'">
+                <img src="images/svg/logo.svg" alt="LocalBites" class="logo-img">
+                <span class="logo-text">LocalBites lite</span>
+            </div>
+            
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="(Placeholder)Search...">
+                </div>
+            </div>
+            
+            <div class="cart-icon-nav">
+                <img src="images/svg/cart.svg" alt="Cart" onclick="window.location.href='cart.html'">
+                <span id="cart-count-nav">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <div class="menu-item" onclick="window.location.href='index.html'">
+                    <img src="images/svg/home.svg" alt="Home">
+                    <span>Restaurant</span>
+                </div>
+                
+                <div class="menu-item" onclick="window.location.href='food.html'">
+                    <img src="images/svg/food.svg" alt="Food">
+                    <span>Food</span>
+                </div>
+                <div class="menu-item active" onclick="window.location.href='cart.html'">
+                    <img src="images/svg/cart.svg" alt="Cart">
+                    <span>My Cart</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content-area">
+            <section class="page">
+                <button class="back-btn" onclick="window.location.href='index.html'">
+                    < Back to Restaurants
+                </button>
+                <h2>Your Cart</h2>
+                <div id="cart-items">
+                    <p id="empty-cart">Your cart is empty</p>
+                </div>
+            
+                <div id="cart-total" style="display: none;">
+                    <div class="total-box">
+                        <h3>Order Total</h3>
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">M0.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Delivery Fee:</span>
+                            <span>M29.99</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total:</span>
+                            <span id="grand-total">M0.00</span>
+                        </div>
+                        <button class="order-btn" onclick="placeOrder()">Place Order</button>
+                    </div>
+                </div>
+                
+                <button class="cart-btn" onclick="window.location.href='index.html'">
+                    <i class="fas fa-home"></i> Continue Shopping
+                </button>
+            </section>
+        </main>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalBites Lite- Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="logo-section" onclick="window.location.href='index.html'">
+                <img src="images/svg/logo.svg" alt="LocalBites" class="logo-img">
+                <span class="logo-text">LocalBites lite</span>
+            </div>
+            
+            <div class="search-section">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="(Placeholder)Search..." aria-label="Search">
+                    <button type="button" class="search-btn" aria-label="Search button">Search</button>
+                </div>
+            </div>
+            
+            <div class="cart-icon-nav" onclick="window.location.href='cart.html'">
+                <img src="images/svg/cart.svg" alt="Cart">
+                <span id="cart-count-nav">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <div class="menu-item active" onclick="window.location.href='index.html'">
+                    <img src="images/svg/home.svg" alt="Home">
+                    <span>Restaurant</span>
+                </div>
+                
+                <div class="menu-item" onclick="window.location.href='food.html'">
+                    <img src="images/svg/food.svg" alt="Food">
+                    <span>Food</span>
+                </div>
+                <div class="menu-item " onclick="window.location.href='cart.html'">
+                    <img src="images/svg/cart.svg" alt="Cart">
+                    <span>My Cart</span>
+                </div>
+            </div>
+        </aside>
+
+        
+        <main class="main-content-area">
+            <!-- 1st section -->
+            <section id="home-page" class="page">
+                <section class="hero-section">
+                    <div class="hero-bg-color"></div>
+                    
+                    <!-- Transparent burger PNG -->
+                    <div class="burger-image">
+                        <img src="images/burger.png" alt="Delicious Burger">
+                    </div>
+                    
+                    <div class="hero-content">
+                        <h1>Craving a Burger?</h1>
+                        <p>Get it delivered hot & fresh in minutes</p>
+                        <button class="hero-btn" onclick="window.location.href='food.html'">
+                            <img src="images/svg/food.svg" alt="Food"> Order Now
+                        </button>
+                    </div>
+                </section>
+
+                <!-- RESTAURANTS SECTION -->
+                <div class="section-header">
+                    <h2>Local Restaurants</h2>
+                    <p>Choose a restaurant to order from</p>
+                </div>
+                
+                <div class="restaurant-grid" id="restaurant-grid">
+                    <!--content from data.json-->
+                </div>
+            </section>
+
+            <!-- Menu Part-->
+            <section id="restaurant-page" class="page" style="display: none;">
+                <button class="back-btn" onclick="showHome()">
+                   < Back to Restaurants
+                </button>
+                
+                <div class="restaurant-header">
+                    <div id="restaurant-info">
+                        <!-- Restaurant infox -->
+                    </div>
+                </div>
+                
+                <div class="menu-section">
+                    <h3>Menu</h3> 
+                    <div id="menu-items">
+                        <!-- Menu items go here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
